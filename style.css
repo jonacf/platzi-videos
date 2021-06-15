@@ -17,6 +17,7 @@ body {
 }
 .nav {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 
   background: linear-gradient(269deg, #a24bcf, #4b79cf, #4bc5cf);
@@ -61,11 +62,6 @@ body {
 .menu__profile img {
   width: 40px;
   height: 40px;
-  margin-right: 8px;
-}
-.menu__profile p {
-  align-self: center;
-  font-family: "anna";
 }
 .nav__menu ul {
   display: none;
@@ -88,4 +84,6 @@ ul:hover {
 }
 .menu__menu li a:hover {
   text-decoration: underline;
+}
+.main__search {
 }
