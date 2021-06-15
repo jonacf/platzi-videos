@@ -6,13 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <h1>Actuando en amor</h1>
-      <nav></nav>
+    <header class="nav">
+      <h1 class="nav__title">Actuando en amor</h1>
+      <nav class="nav__menu">
+        <div class="menu__profile">
+          <img src="imgs/man.png" alt="user" />
+          <p>Perfil</p>
+        </div>
+        <ul class="menu__menu">
+          <li><a href="#">Acerca de nosotros</a></li>
+          <li><a href="#">Facebook</a></li>
+        </ul>
+      </nav>
     </header>
-    <main></main>
+    <main>
+      <section class="main__search">
+        <h2 class="main__search--title">¿Qué quieres ver hoy?</h2>
+        <input
+          class="main__search--input"
+          type="text"
+          placeholder="Buscar..."
+        />
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>

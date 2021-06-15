@@ -10,9 +10,15 @@ html {
   font-family: anna;
   src: url(fonts/anna-clara.ttf) format("truetype");
 }
-h1 {
-  font-family: anna;
-  font-size: 5rem;
+body {
+  background-color: #ab88ff;
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+
   background: linear-gradient(269deg, #a24bcf, #4b79cf, #4bc5cf);
   background-size: 600% 600%;
 
@@ -40,4 +46,46 @@ h1 {
   100% {
     background-position: 0% 50%;
   }
+}
+.nav__title {
+  font-family: anna;
+  font-size: 5rem;
+}
+.nav__menu {
+  width: 150px;
+}
+.menu__profile {
+  display: flex;
+  font-size: 1.5rem;
+}
+.menu__profile img {
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+}
+.menu__profile p {
+  align-self: center;
+  font-family: "anna";
+}
+.nav__menu ul {
+  display: none;
+  position: absolute;
+  width: 100px;
+  text-align: right;
+}
+.nav__menu:hover ul,
+ul:hover {
+  display: block;
+}
+.menu__menu li {
+  list-style: none;
+  margin: 10px 0;
+}
+.menu__menu li a {
+  color: white;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+.menu__menu li a:hover {
+  text-decoration: underline;
 }
