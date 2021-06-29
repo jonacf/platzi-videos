@@ -11,8 +11,10 @@ html {
   src: url(fonts/anna-clara.ttf) format("truetype");
 }
 body {
-  background-color: #8f57fd;
   font-family: "Mulish", sans-serif;
+}
+main {
+  background: linear-gradient(#8f57fd, #ab88ff);
 }
 .nav {
   display: flex;
@@ -21,18 +23,22 @@ body {
   padding: 20px;
   padding-bottom: 0;
   justify-content: space-between;
+  background-color: #8f57fd;
 }
 .nav__title {
   display: inline-block;
   font-family: anna;
   font-size: 2.8rem;
 }
+.nav__div {
+  width: 25%;
+  flex-grow: 1;
+}
 .nav__menu {
   display: flex;
-  width: 50%;
   justify-content: flex-end;
-  flex-grow: 1;
   position: relative;
+  width: 81px;
   cursor: pointer;
   padding: 5px;
 }
@@ -91,7 +97,8 @@ ul:hover {
 ::placeholder {
   color: rgb(255, 255, 255);
   font-size: 1.4rem;
-  font-weight: 600;
+  font-weight: 300;
+  opacity: 0.5;
 }
 .main__search--input:focus::placeholder {
   color: transparent;
@@ -138,6 +145,9 @@ ul:hover {
   object-fit: cover;
 }
 .carrusel-item__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   background: linear-gradient(
     to top,
     rgba(0, 0, 0, 0.9) 0%,
@@ -154,5 +164,35 @@ ul:hover {
   bottom: 0;
 }
 .carrusel-item__details p {
-  color: aliceblue;
+  color: rgb(255, 255, 255);
+}
+.pack-img img {
+  width: 40px;
+}
+.carrusel-item__details > div {
+  opacity: 0;
+}
+.carrusel-item__details > div:hover {
+  opacity: 1;
+  transition: 0.34s;
+}
+.footer {
+  background: #ab88ff;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+}
+.footer a {
+  color: white;
+  cursor: pointer;
+  font-size: 1.4rem;
+  padding-left: 30px;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+::-webkit-scrollbar {
+  display: none;
 }
